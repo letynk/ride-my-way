@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./CSS/style.css" rel="stylesheet">
+    <title>Ridemyway</title>
+</head>
+
+<body>
+
+    <!-- Nav bar -->
+    <div class="nav">
+        <div class="logo">
+            <h2>Ridemyway</h2>
+        </div>
+        <div>
+            <input class="login-input" placeholder="username"> </input>
+            <input class="login-input" placeholder="password"> </input>
+            <!-- <a href="login.html" class="log">Login</a> -->
+            <button class="login-btn"> Login</button>
+        </div>
+    </div>
+    <video loop muted autoplay id="vid">
+        <source src="images/car.mp4">
+    </video>
+
+
+
+    <div class="welcomeMsg">
+            <p>
+                <h1>Welcome to Ridemyway!</h1>
+            </p>
+
+
+            <div class="sign-up-options">
+                <p>
+                    <h3>What would you like to be ?</h3>
+                </p>
+                <button id ="sign-up-btn-drider" class="sign-up-btn" onclick="opendriverForm()">A Driver</button>
+                <button id ="sign-up-btn-rider" class="sign-up-btn"  onclick="openriderForm()">A Rider</button>
+            </div>
+            
+        </div>
+
+            <!-- rider model --->
+        <div id="rider-signup-box" >
+                <div class="form-popup" id="rider-signup-form">
+                        <form  class="form-container">
+                          <h1>Sign up as a Rider</h1>
+                      
+                          <input class="input box-style"  placeholder="First Name" type= "First Name" required></input>
+                          <input class="input box-style" placeholder="Last Name" type= "Last Name" required></input>
+                          <input class="input box-style"  placeholder="Phone Number" type= "Phone Number" required></input>
+                          <input class="input box-style" placeholder="Email" type= "Email" required></input>
+                          <input class="input box-style" placeholder="Username" type= "Username" required></input>
+                          <input class="input box-style" placeholder="Password" type= "Password" required></input>
+                      
+
+                          <div class="sign-up-btns">
+                            <button type="submit" class="btn" >Submit</button>
+                            <button type="button" class="btn cancel" onclick="closeriderForm()">Close</button>
+                          </div>
+                       
+                        </form>
+                </div>
+        </div>
+        <di></di>
+
+        <script type="text/javascript" src="./script.js"></script>
+
+
+
+                   <!-- driver model --->
+                   <div id="driver-signup-box" >
+                    <div class="form-popup-driver" id="driver-signup-form">
+                            <form  class="form-container">
+                              <h1>Sign up as a Driver</h1>
+                          
+                              <input class="input box-style"  placeholder="First Name" type= "First Name" required></input>
+                              <input class="input box-style" placeholder="Last Name" type= "Last Name" required></input>
+                              <input class="input box-style"  placeholder="Phone Number" type= "Phone Number" required></input>
+                              <input class="input box-style" placeholder="Email" type= "Email" required></input>
+                              <input class="input box-style" placeholder="Car Type" type= "Car Type" required></input>
+                              <input class="input box-style" placeholder="Car Number" type= "Car Number" required></input>
+                              <input class="input box-style" placeholder="Username" type= "Username" required></input>
+                              <input class="input box-style" placeholder="Password" type= "Password" required></input>
+    
+                              <div class="sign-up-btns">
+                                <button type="submit" class="btn">Submit</button>
+                                <button type="button" class="btn cancel" onclick="closedriverForm()">Close</button>
+                              </div>
+                           
+                            </form>
+                    </div>
+            </div>
+            <di></di>
+    
+            <script type="text/javascript" src="./script.js"></script>
+</body>
+
+
+
+</html>
