@@ -217,7 +217,18 @@ video{
     display: none;
     position: fixed;
     right: 23%;
-    bottom: 32%;
+    bottom: 12%;
+    
+    max-width: 1000px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+
+  .form-popup-driver{
+    display: none;
+    position: fixed;
+    right: 23%;
+    bottom: 0%;
     
     max-width: 1000px;
     border: 3px solid #f1f1f1;
@@ -234,7 +245,9 @@ video{
   
   /* Full-width input fields */
   .form-container input[type='First Name'], .form-container input[type='Last Name'],  
-  .form-container input[type='Phone Number'] ,.form-container input[type=Email] {
+  .form-container input[type='Phone Number'] ,.form-container input[type=Email] 
+  ,.form-container input[type='Username'],.form-container input[type=Password]
+  ,.form-container input[type='Car Number'],.form-container input[type='Car Type'] {
     width: 90%;
     padding: 15px;
     margin: 5px 0 22px 28px;
