@@ -1,18 +1,9 @@
 
 
-  function openriderForm() {
+  function openForm() {
     document.getElementById("rider-signup-form").style.display = "block";
   }
   
-  function closeriderForm() {
+  function closeForm() {
     document.getElementById("rider-signup-form").style.display = "none";
-  }
-
-
-  function opendriverForm() {
-    document.getElementById("driver-signup-form").style.display = "block";
-  }
-  
-  function closedriverForm() {
-    document.getElementById("driver-signup-form").style.display = "none";
   }
