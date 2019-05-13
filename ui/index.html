@@ -39,13 +39,13 @@
                 <p>
                     <h3>What would you like to be ?</h3>
                 </p>
-                <button id ="sign-up-btn-drider" class="sign-up-btn">A Driver</button>
-                <button id ="sign-up-btn-rider" class="sign-up-btn"  onclick="openForm()">A Rider</button>
+                <button id ="sign-up-btn-drider" class="sign-up-btn" onclick="opendriverForm()">A Driver</button>
+                <button id ="sign-up-btn-rider" class="sign-up-btn"  onclick="openriderForm()">A Rider</button>
             </div>
             
         </div>
 
-            <!-- rider model -->
+            <!-- rider model --->
         <div id="rider-signup-box" >
                 <div class="form-popup" id="rider-signup-form">
                         <form  class="form-container">
@@ -55,11 +55,13 @@
                           <input class="input box-style" placeholder="Last Name" type= "Last Name" required></input>
                           <input class="input box-style"  placeholder="Phone Number" type= "Phone Number" required></input>
                           <input class="input box-style" placeholder="Email" type= "Email" required></input>
+                          <input class="input box-style" placeholder="Username" type= "Username" required></input>
+                          <input class="input box-style" placeholder="Password" type= "Password" required></input>
                       
 
                           <div class="sign-up-btns">
-                            <button type="submit" class="btn">Submit</button>
-                            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                            <button type="submit" class="btn" >Submit</button>
+                            <button type="button" class="btn cancel" onclick="closeriderForm()">Close</button>
                           </div>
                        
                         </form>
@@ -68,6 +70,35 @@
         <di></di>
 
         <script type="text/javascript" src="./script.js"></script>
+
+
+
+                   <!-- driver model --->
+                   <div id="driver-signup-box" >
+                    <div class="form-popup-driver" id="driver-signup-form">
+                            <form  class="form-container">
+                              <h1>Sign up as a Driver</h1>
+                          
+                              <input class="input box-style"  placeholder="First Name" type= "First Name" required></input>
+                              <input class="input box-style" placeholder="Last Name" type= "Last Name" required></input>
+                              <input class="input box-style"  placeholder="Phone Number" type= "Phone Number" required></input>
+                              <input class="input box-style" placeholder="Email" type= "Email" required></input>
+                              <input class="input box-style" placeholder="Car Type" type= "Car Type" required></input>
+                              <input class="input box-style" placeholder="Car Number" type= "Car Number" required></input>
+                              <input class="input box-style" placeholder="Username" type= "Username" required></input>
+                              <input class="input box-style" placeholder="Password" type= "Password" required></input>
+    
+                              <div class="sign-up-btns">
+                                <button type="submit" class="btn">Submit</button>
+                                <button type="button" class="btn cancel" onclick="closedriverForm()">Close</button>
+                              </div>
+                           
+                            </form>
+                    </div>
+            </div>
+            <di></di>
+    
+            <script type="text/javascript" src="./script.js"></script>
 </body>
 
 
