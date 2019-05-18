@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./CSS/driver-dashboard-style.css" rel="stylesheet">
+    <title>Ridemyway</title>
+</head>
+
+<body>
+
+    <!-- Nav bar -->
+    <div class="nav">
+        <div class="logo">
+            <h2>Ridemyway</h2>
+        </div>
+        <div >
+            <ul class = "options">
+                <a>Offer Ride</a>
+                <a>Profile</a>
+                <a>Logout</a>
+            </ul>
+        </div>
+    </div>
+   
+
+<!-- 
+    <div class="welcomeMsg">
+            <p>
+                <h1>Welcome to Ridemyway!</h1>
+            </p>
+
+
+            <div class="sign-up-options">
+                <p>
+                    <h3>What would you like to be ?</h3>
+                </p>
+                <button id ="sign-up-btn-drider" class="sign-up-btn" onclick="opendriverForm()">A Driver</button>
+                <button id ="sign-up-btn-rider" class="sign-up-btn"  onclick="openriderForm()">A Rider</button>
+            </div>
+            
+        </div> -->
+
+
+        <div class ="driver-dashboard">
+
+            <p id="db-title" >Dashboard: Driver</p>
+            <div class="db-section-1" >
+                <p>Welcome section</p>
+
+            </div> 
+
+            <div class ="db-section-2">
+            
+                <div class="ride-info">
+                        <p>Rider Info</p>
+                        <h5>Name: </h5>
+                        <h5>Pick-up location: </h5>
+                    
+                </div>
+                <div class="ride-offer">
+                        <p>Ride Offer</p>
+                        <h5>Destination: </h5>
+                        <h5>Price: </h5>
+    
+                    </div>
+                <div class="ride-status">
+                        <p>Status</p>
+                        <p> Available</p>   
+                </div>
+            </div>
+
+            <div class ="db-section-3">
+              
+
+                <div class="rider-list">
+                    <p>Rider List</p>
+                    <table>
+                            <tr>
+                                <th>Name</th>
+                                <th>Pick-up location</th>
+                                <th>Pick-Rider</th>
+                            </tr>
+                            <tr>
+                                <td>Maria Anders</td>
+                                <td>Morrocco</td>
+                                <td><button>Pick-up</button></td>
+                            </tr>
+                            <tr>
+                                    <td>Maria Anders</td>
+                                    <td>Morrocco</td>
+                                    <td><button>Pick-up</button></td>
+                            </tr>
+                            <tr>
+                                    <td>Maria Anders</td>
+                                    <td>Morrocco</td>
+                                    <td><button>Pick-up</button></td>
+                                </tr>
+        
+                                <tr>
+                                        <td>Maria Anders</td>
+                                        <td>Morrocco</td>
+                                        <td><button>Pick-up</button></td>
+                                    </tr>
+                        </table>
+
+                </div>
+                <div class="map">
+                    
+                </div>
+            
+            </div>
+        </div>
+
+            <!-- rider model --->
+        <div id="rider-signup-box" >
+                <div class="form-popup" id="rider-signup-form">
+                        <form  class="form-container">
+                          <h1>Sign up as a Rider</h1>
+                      
+                          <input class="input box-style"  placeholder="First Name" type= "First Name" required></input>
+                          <input class="input box-style" placeholder="Last Name" type= "Last Name" required></input>
+                          <input class="input box-style"  placeholder="Phone Number" type= "Phone Number" required></input>
+                          <input class="input box-style" placeholder="Email" type= "Email" required></input>
+                          <input class="input box-style" placeholder="Username" type= "Username" required></input>
+                          <input class="input box-style" placeholder="Password" type= "Password" required></input>
+                      
+
+                          <div class="sign-up-btns">
+                            <button type="submit" class="btn" >Submit</button>
+                            <button type="button" class="btn cancel" onclick="closeriderForm()">Close</button>
+                          </div>
+                       
+                        </td>
+                </div>
+        </div>
+        <di></di>
+
+        <script type="text/javascript" src="./script.js"></script>
+
+
+
+                   <!-- driver model --->
+                   <div id="driver-signup-box" >
+                    <div class="form-popup-driver" id="driver-signup-form">
+                            <form  class="form-container">
+                              <h1>Sign up as a Driver</h1>
+                          
+                              <input class="input box-style"  placeholder="First Name" type= "First Name" required></input>
+                              <input class="input box-style" placeholder="Last Name" type= "Last Name" required></input>
+                              <input class="input box-style"  placeholder="Phone Number" type= "Phone Number" required></input>
+                              <input class="input box-style" placeholder="Email" type= "Email" required></input>
+                              <input class="input box-style" placeholder="Car Type" type= "Car Type" required></input>
+                              <input class="input box-style" placeholder="Car Number" type= "Car Number" required></input>
+                              <input class="input box-style" placeholder="Username" type= "Username" required></input>
+                              <input class="input box-style" placeholder="Password" type= "Password" required></input>
+    
+                              <div class="sign-up-btns">
+                                <button type="submit" class="btn">Submit</button>
+                                <button type="button" class="btn cancel" onclick="closedriverForm()">Close</button>
+                              </div>
+                           
+                            </form>
+                    </div>
+            </div>
+            <di></di>
+    
+            <script type="text/javascript" src="./script.js"></script>
+</body>
+
+
+
+</html>
