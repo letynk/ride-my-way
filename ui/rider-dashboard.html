@@ -71,7 +71,7 @@
                     <tr>
                         <td>Maria Anders</td>
                         <td>Morrocco</td>
-                        <td><button>View</button></td>
+                        <td><button onclick="opendriverInfo()">View</button></td>
                     </tr>
                     <tr>
                         <td>Maria Anders</td>
@@ -100,16 +100,16 @@
     </div>
 
 
-    <!-- Offer ride model --->
-    <div id="driver-offer-box">
-        <div class="form-popup-driver" id="driver-signup-form">
+    <!-- driver info model --->
+    <div id="driver-info-box">
+        <div class="form-popup-driver" id="driver-info-form">
             <form class="form-container">
-                <h1>Offer Ride</h1>
-
-                <input class="input box-style" placeholder="Destination" type="Destination" required></input>
-                <input class="input box-style" placeholder="Price" type="Price" required></input>
+                <h1>Driver Info</h1>
+                <h5>Name: </h5>
+                <h5>Car Type: </h5>
+                <h5>Car Number: </h5>
                 <div class="sign-up-btns">
-                    <button type="submit" class="btn" onclick="submitofferForm()">Submit</button>
+                    <button type="submit" class="btn" onclick="submitofferForm()">Accept</button>
                     <button type="button" class="btn cancel" onclick="closeofferForm()">Close</button>
                 </div>
 
