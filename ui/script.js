@@ -15,3 +15,15 @@
   function closedriverForm() {
     document.getElementById("driver-signup-form").style.display = "none";
   }
+  function closeofferForm() {
+    document.getElementById("driver-offer-box").style.display = "none";
+  }
+
+  function loginForm(){
+    document.getElementById("username").style.display = "none";
+    document.getElementById("password").style.display = "none";
+  }
+
+  function openofferForm(){
+   document.getElementById("driver-signup-form").style.display = "block";
+  }
