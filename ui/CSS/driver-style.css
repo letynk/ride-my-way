@@ -264,6 +264,10 @@ left: 0; */
     width: 30%;
     background-color: purple;
 }
+.rider-history-list{
+    width: 100%;
+    background-color: purple;
+}
 
 .map {
     width: 65%;
