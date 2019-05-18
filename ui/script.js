@@ -5,6 +5,11 @@
     document.getElementById("rider-signup-form").style.display = "block";
   }
   
+
+  function opendriverInfo() {
+    document.getElementById("driver-info-form").style.display = "block";
+  }
+  
   function closeriderForm() {
     document.getElementById("rider-signup-form").style.display = "none";
   }
