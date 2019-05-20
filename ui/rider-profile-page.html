@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./CSS/rider-styles.css" rel="stylesheet">
+    <title>Ridemyway</title>
+</head>
+
+<body>
+
+    <!-- Nav bar -->
+    <div class="nav">
+        <div class="logo">
+            <h2>Ridemyway</h2>
+        </div>
+        <div>
+            <ul class="options">
+                <a onclick="openofferForm()">Offer Ride</a>
+                <a>Dashboard</a>
+                <a>Logout</a>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="driver-dashboard">
+
+        <p id="db-title">Profile: Rider</p>
+        <div class="db-section-1">
+            <p>Welcome section</p>
+
+        </div>
+
+        <div class="db-section-2">
+
+            <div class="ride-info">
+                <p> Personal Information</p>
+                <h5>First Name: </h5>
+                <h5>Last Name: </h5>
+                <h5>Phone Number: </h5>
+                <h5>Email: </h5>
+
+            </div>
+          
+            <div class="ride-status">
+                <p> Rides Taken</p>
+                <h5>100</h5>
+            </div>
+        </div>
+
+        <div class="db-section-3">
+
+
+            <div class="rider-history-list">
+                <p>Ride History</p>
+                <table>
+                    <tr>
+                        <th>Rider Name</th>
+                        <th>Pick-up location</th>
+                        <th>Destination</th>
+                        <th>Price</th>
+                     
+                    </tr>
+                    <tr>
+                        <td>Maria Anders</td>
+                        <td>Morrocco</td> 
+                        <td>Nyanza Road</td>
+                        <td>$400</td>
+                    </tr>
+                    <tr>
+                        <td>Maria Anders</td>
+                        <td>Morrocco</td>
+                        <td>Nyanza Road</td>
+                        <td>$400</td>
+                    </tr>
+                    <tr>
+                        <td>Maria Anders</td>
+                        <td>Morrocco</td>
+                        <td>Nyanza Road</td>
+                        <td>$400</td>
+                    </tr>
+
+                    <tr>
+                        <td>Maria Anders</td>
+                        <td>Morrocco</td>
+                        <td>Nyanza Road</td>
+                        <td>$400</td>
+                    </tr>
+                </table>
+
+            </div>
+           
+
+        </div>
+    </div>
+
+
+    <!-- Offer ride model --->
+    <div id="driver-offer-box">
+        <div class="form-popup-driver" id="driver-signup-form">
+            <form class="form-container">
+                <h1>Offer Ride</h1>
+
+                <input class="input box-style" placeholder="Destination" type="Destination" required></input>
+                <input class="input box-style" placeholder="Price" type="Price" required></input>
+                <div class="sign-up-btns">
+                    <button type="submit" class="btn" onclick="submitofferForm()">Submit</button>
+                    <button type="button" class="btn cancel" onclick="closeofferForm()">Close</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
