@@ -1,1 +1,4 @@
 .DS_Store
+ui/.vscode
+backend/node_modules
+
