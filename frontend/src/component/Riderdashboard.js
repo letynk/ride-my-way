@@ -8,6 +8,21 @@ import "./riderstyles.css";
 
 //  Riderdashboard
 class Riderdashboard extends Component {
+
+//   constructor(){
+//     super();
+//     // this.state = {
+//     //   rides: []
+//     // };
+
+//     componentDidMount() {
+//       // fetch('/api/v1/rides')
+//       // .then(res=>res.json())
+//       // .then(rides=>this.setState({rides}));
+//       console.log("bennett")
+//   }
+// }
+
   render() {
     return (
       <div>

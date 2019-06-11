@@ -5,9 +5,9 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-const Port = "3000";
+const Port = "5000";
 
-var ride = [
+var rides = [
     {
       id: 1,
       driverName: "John Doe",
@@ -49,22 +49,21 @@ var ride = [
 
 
 // //retrieves list of ride offers
-// app.get("/api/v1/rides", (req,res) => {
+app.get("/api/v1/rides", (req,res) => {
 
-//   res.json(ride);
-//   console.log("list was succefully retrieved!");
-// });
+  res.status(200).json({message: 'list was succefully retrieved!',rides});
+});
 
-// //gets a specific rider offer
-// app.get("/api/v1/rides/:id", (req, res) => {
-// //   var query;
-// //   query = ride[req.params.id];
-// //   res.json(query);
+//gets a specific rider offer
+app.get("/api/v1/rides/:id", (req, res) => {
+//   var query;
+//   query = ride[req.params.id];
+//   res.json(query);
 
-//   res.json(ride[req.params.id]);
+  res.json(rides[req.params.id]);
 
 
-// });
+});
 
 //creates a ride offer
 app.post("/api/v1/rides", (req, res) => {
@@ -78,10 +77,10 @@ app.post("/api/v1/rides", (req, res) => {
     status: req.body.status
   };
 
-  ride.push(rideOffer);
+  rides.push(rideOffer);
 
-  res.status(200).json(ride);
-  console.log("Object added succefully!");
+  res.status(200).json({message:'Object added succefully!',rides});
+  // console.log("Object added succefully!");
 
 });
 
@@ -113,9 +112,10 @@ app.post("/api/v1/rides/:id/:requests", (req, res) => {
 
   rideRequestList.push(rideRequest);
   console.log(rideRequest);
-  res.json(rideRequestList);
+  res.status(200).json({message:'ride request was sent!', rideRequestList});
 });
 
-app.listen(process.env.PORT || 3000);
+// app.listen(process.env.PORT || 3000);
+module.exports = app;
 
 console.log("App listening on port " + Port);
