@@ -4,27 +4,61 @@
 // import Driversignupmodal from './Driversignupmodal.js';
 // import Ridersignupmodal from './Ridersignupmodal.js';
 
-import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
+import React, {Component} from 'react';
+import {Switch, Route, Link} from 'react-router-dom';
+import {withRouter} from 'react-router';
 import bVideo from './assets/car.mp4';
 import './home.css';
 
 
-
 class Home extends Component {
+    login = event => {
+      event.preventDefault();
+
+      console.log("It works!");
+
+      var username = event.target[0].value;
+      var password = event.target[1].value;
+
+      console.log("Hey im here!");
+
+      if (username === "driver" && password === "1234") {
+        this.props.history.push('/driver-dashboard');
+      } else if (username === "rider" && password === "1234") {
+        this.props.history.push('/rider-dashboard');
+      } else {
+        alert("Wrong username or password!");
+      }
+    };
+
     render() {
       return (
           <div>
-              {/* <div className="nav">
+              <div className="nav">
                 <div className="logo">
-                    <h2>Ridemyway</h2>
+                  <h2>Ridemyway</h2>
                 </div>
-                <div>
-                    <input className="login-input" placeholder="username"/>
-                    <input className="login-input" placeholder="password"/>
-                    <Link to='./Riderdashboard.js'> <button  className="login-btn"> Login  </button></Link>
-                </div>
-              </div> */}
+
+                <form onSubmit={this.login}>
+                  <div>
+                    <input
+                      id="username"
+                      className="login-input"
+                      placeholder="username"
+                    />
+                    <input
+                      id="password"
+                      className="login-input"
+                      placeholder="password"
+                    />
+                   
+                      <button type="submit" className="login-btn">
+                        Login
+                      </button>
+                   
+                  </div>
+                </form>
+              </div>
 
             <video loop muted autoPlay id="vid">
                 <source src={bVideo}  type='video/mp4'/>
@@ -62,7 +96,7 @@ class Home extends Component {
                       </div>
                     </form>
                 </div>
-            </div>
+          </div>
 
             <div id="rider-signup-box" >
                 <div className="form-popup" id="rider-signup-form">
@@ -82,18 +116,16 @@ class Home extends Component {
                             </div>
                         </form>
                 </div>
-            </div>
-            {/* <Navbar/>
-            <Backgroundvideo/>
-            <Registration/> */}
+            </div> 
 
-            {/* <Driversignupmodal/> */}
-            {/* <Ridersignupmodal/> */}
+
           
         </div>
       );
     }
   }
   
-  export default Home;
+
+ 
+  export default withRouter(Home);
   
